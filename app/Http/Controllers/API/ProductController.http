@@ -1,0 +1,38 @@
+
+### allProducts
+GET http://localhost:8000/api/products
+
+### storeProduct
+POST http://localhost:8000/api/products
+Content-Type: application/json
+
+{
+"product_name":"Macbook Pro 16 inch",
+"product_detail":"This is detail of Macbook Pro",
+"product_barcode":"1254589658749",
+"product_qty":"1",
+"product_price":"89500",
+"product_image": "https://www.apple.com/newsroom/images/product/mac/standard/Apple_16-inch-MacBook-Pro_111319_big.jpg.large.jpg",
+"product_category":"Electronic",
+"product_status":"1"
+}
+
+
+### updateProductById
+PUT http://localhost:8000/api/products/1
+Content-Type: application/json
+
+{
+"product_name":"Macbook Pro 16 inch",
+"product_detail":"This is detail of Macbook Pro",
+"product_barcode":"1254589658742",
+"product_qty":"1",
+"product_price":"89500",
+"product_image": "https://www.apple.com/newsroom/images/product/mac/standard/Apple_16-inch-MacBook-Pro_111319_big.jpg.large.jpg",
+"product_category":"Electronic",
+"product_status":"1"
+}
+
+### deleteProductById
+DELETE http://localhost:8000/api/products/1
+
